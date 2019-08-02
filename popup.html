@@ -1,0 +1,24 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>javascript:voidで別ウィンドウをオープンしようとしたときabout:blank#blockedというポップアップエラーが出た時の対処法</title>
+</head>
+<body>
+<h1>対処法</h1>
+<p>target="_blank" を消せばいい</p>
+<h2>target="_blank" 有り</h2>
+<div style="margin-bottom: 60px;">
+    <a id="popup_id1" href="javascript:void(window.open('https://yahoo.co.jp', '', 'width=500,height=650'));"
+       target="_blank">
+        <button>ポップアップ【失敗】</button>
+    </a>
+</div>
+<h2>target="_blank" 無し</h2>
+<div>
+    <a id="popup_id2" href="javascript:void(window.open('https://yahoo.co.jp', '', 'width=500,height=650'));">
+        <button>ポップアップ【成功】</button>
+    </a>
+</div>
+</body>
+</html>
